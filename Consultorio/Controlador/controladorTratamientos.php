@@ -2,6 +2,7 @@
 require_once '../Modelo/Tratamientos.php';
 
 $gestorTratamiento = new Tratamiento();
+$pacientes = $gestorTratamiento->obtenerPacientes();
 
 $elegirAcciones = isset($_POST['Acciones']) ? $_POST['Acciones'] : "Cargar";
 
